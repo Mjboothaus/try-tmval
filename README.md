@@ -1,2 +1,3 @@
 # try-tmval
-Experiments wit TmVal package
+
+Experiments with [`TmVal`](https://genedan.com/tmval/docs/intro.html) package

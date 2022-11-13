@@ -1,4 +1,5 @@
 setup-python-environment:
+    #!/usr/bin/env bash
     pipx install pip-tools
     python -m venv .venv_try-tmval
     source .venv_try-tmval/bin/activate

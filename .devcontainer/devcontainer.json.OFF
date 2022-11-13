@@ -3,8 +3,9 @@
 	"image": "mcr.microsoft.com/devcontainers/python:3.10-bullseye",
 	"features": {
 		"ghcr.io/devcontainers/features/node:1": {
-			"version": "none"
+			"version": "lts"
 		},
+		"ghcr.io/rocker-org/devcontainer-features/pandoc:1": {},
 		"ghcr.io/guiyomh/features/just:0": {}
 	}
 
@@ -12,7 +13,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "pip3 install --user -r requirements.txt",
+	"postCreateCommand": "just setup-python-environment",
 
 	// Configure tool-specific properties.
 	// "customizations": {},

@@ -6,4 +6,7 @@ setup-python-environment:
     python -m pip install --upgrade pip
     pip-compile requirements-dev.in
     pip install -r requirements-dev.txt
-    ipython kernel install --name ".venv" --user
+    ipython kernel install --name ".venv_try-tmval" --user
+    echo  
+    echo source .venv_try-tmval/bin/activate
+    echo 
